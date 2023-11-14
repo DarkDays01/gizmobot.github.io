@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Mod</title>
+    <title>GizmoBot</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,8 +20,6 @@
             <ul class="nav-area top-nav">
                 <li><a href="#top">Ana Sayfa</a></li>
                 <li><a href="#features">Bot Hakkında</a></li>
-                <li><a href="#commands">Komutlar</a></li>
-                <li><a href="#faq">SSS</a></li>
             </ul>
         </nav>
         <a href="" class="btn-area">Sunucuna Ekle</a>
@@ -31,8 +29,8 @@
     <div class="wrapper">
         <div class="home" id="home">
             <div class="home-text">
-                <h1 id="botname">Atalantis Bot</h1>
-                <p class="bot-description">Türkçe Discord Botu'mu arıyorsun? Öyle ise Atalantis Bot Tam Sana Göre :)</p>
+                <h1 id="botname">GizmoBot</h1>
+                <p class="bot-description">Türkçe Discord Botu'mu arıyorsun? Öyle ise GizmoBot Tam Sana Göre :)</p>
                 <button class="home-btn">Sunucuna Ekle</button>
 				<button class="home-btn">Destek Sunucum</button>
             </div>
@@ -64,123 +62,7 @@
                 </center>
             </div>
             <!-- feature start -->
-            <div class="features-grid">
-                <div class="feature feature1">
-                    <i class="fas fa-clipboard-list"></i>
-                    <h4>Moderasyon Komutları</h4>
-                    <p>Discord sunucunuz için en işlevli ve en iyi moderasyon komutlarını sunuyoruz!</p>
-
-                </div>
-                <!-- feature end -->
-                <!-- feature start -->
-                <div class="feature feature2">
-                    <i class="fas fa-server"></i>
-                    <h4>7/24 Aktif</h4>
-                    <p>Discord Botumuz profosyonel olarak 24/7 hizmet sağlamaktadır.</p>
-
-                </div>
-                <!-- feature end -->
-                <!-- feature start -->
-                <div class="feature feature3">
-                    <i class="fab fa-angellist"></i>
-                    <h4>Kolay Kullanım
-                    </h4>
-                    <p>Basit altyapısı ile kullanıcılarına kolay bir deneyim sunar.</p>
-                </div>
-                <!-- feature end -->
-            </div>
-        </div>
-        <div class="curved">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill-opacity="1" id="commands"
-                    d="M0,224L48,229.3C96,235,192,245,288,218.7C384,192,480,128,576,133.3C672,139,768,213,864,229.3C960,245,1056,203,1152,186.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-    </div>
-    <!-- features end -->
-    <!-- commands -->
-    <div class="wrapper reveal">
-        <div class="title">
-            <div class="th1">
-                <h1>Komutlar</h1>
-            </div>
-            <center>
-                <div class="thr">
-                    <hr>
-                </div>
-            </center>
-        </div>
-        <!-- Command Category -->
-        <nav>
-            <div class=" categorys">
-                <span class="category active" data-name="all">Hepsi</span>
-				<span class="category" data-name="info">Kişisel</span>
-                <span class="category" data-name="fun">Eğlence</span>
-                <span class="category" data-name="moderator">Moderasyon</span>
-                <span class="category" data-name="premium">Premium</span>
-            </div>
-        </nav>
-        <!-- Commands -->
-        <div class="commands">
-            <!-- Command Start -->
-            <div class="command" data-name="fun">
-                <h2>Adam Ol</h2><span>
-                    <div class="cmdinfo">
-                        <p>Bu komut ile profil fotoğrafınızın altına takım elbise eklenmesini sağlayabilirsiniz. </p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="moderator">
-                <h2>Kayıt Sistemi</h2><span>
-                    <div class="cmdinfo">
-                        <p>Sunucuya girişlerde üyeler kendileri kayıt olsunlar, İsim yaş ayarlayabilirsiniz.</p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="fun">
-                <h2>Kral Ol</h2><span>
-                    <div class="cmdinfo">
-                        <p>Bu komut ile profil fotoğrafınızın kraliyet çerçevesiyle kaplanmasını sağlayabilirsiniz.</p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="info">
-                <h2>Avatar</h2><span>
-                    <div class="cmdinfo">
-                        <p>Bu komut ile kendi profil fotoğrafını görebilirsin.</p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="premium">
-                <h2>Anti Raid Bot Sistemi</h2><span>
-                    <div class="cmdinfo">
-                        <p>Bu Özellik Premium Sunucular İçindir Anti Raid Bot sistemi, Sunucunuza yabancı bot girdiği zaman o botu otomatik olarak sunucudan atar ve sunucu sahibine bildirim gönderir sunucu sahibi izin verir ise yabancı bot sunucuya girebilir.</p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-            <!-- Command Start -->
-            <div class="command" data-name="moderator">
-                <h2>İsim Sistemi</h2><span>
-                    <div class="cmdinfo">
-                        <p>İsim sistemi; ayarladığınız isim taslağına göre tek komut ile isimleri ayarlamanızı sağlar.</p>
-                    </div>
-                </span>
-            </div>
-            <!-- Command End -->
-        </div>
-    </div>
-    <!-- commands end -->
-    <!-- faq -->
+            
     <div class="faq">
         <div class="curve">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
