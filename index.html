@@ -1,18 +1,41 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GizmoBot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Özel Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .custom-bar {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .custom-button {
+      background-color: #000
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
-    <a href="https://gizmobott.github.io" target="_blank">
-        <div style="background-color: #7289DA; color: #FFFFFF; padding: 10px; border-radius: 5px;">
-            <strong>Discord Embed Başlığı</strong>
-            <p>Açıklama metni buraya</p>
-        </div>
-    </a>
-    
+<div class="custom-bar">
+  <button class="custom-button" onclick="window.location.href='BURAYA_BELİRLEDİĞİNİZ_URL'">İleri Git</button>
+</div>
+
+<!-- Sayfa içeriği buraya gelecek -->
+
 </body>
 </html>
