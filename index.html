@@ -8,32 +8,80 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #333;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
     .custom-bar {
-      background-color: #262525;
+      background-color: #000;
       padding: 10px;
       position: fixed;
       top: 0;
       width: 100%;
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
     }
 
-    .custom-button {
-      background-color: #000
-      border: none;
-      padding: 10px 20px;
-      border-radius: 50px;
-      cursor: pointer;
+    .full-circle {
+      background-color: #41b554;
+      border-radius: 50%;
+      padding: 20px;
+      margin: 0 10px;
+    }
+
+    .half-circle-left,
+    .half-circle-right {
+      background-color: #41b554;
+      border-radius: 50% 0 0 50%;
+      width: 20px;
+      height: 50px;
+      margin: 0 5px;
+    }
+
+    .custom-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-picture {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .text-content {
+      color: #fff;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .description {
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
 <div class="custom-bar">
-  <button class="custom-button" onclick="window.location.href='https://google.com'">Beni Sunucuna Ekle!</button>
+  <div class="half-circle-left"></div>
+  <div class="full-circle custom-content">
+    <img src="YOUR_PROFILE_PICTURE_URL" alt="Profile Picture" class="profile-picture">
+    <div class="text-content">
+      <div class="title">Başlık Buraya</div>
+      <div class="description">Açıklama Buraya</div>
+    </div>
+  </div>
+  <div class="half-circle-right"></div>
 </div>
 
 <!-- Sayfa içeriği buraya gelecek -->
